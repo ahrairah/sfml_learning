@@ -1,5 +1,7 @@
 #ifndef GAME_H_INCLUDED
 #define GAME_H_INCLUDED
+#include <SFML/System.hpp>
+#include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 class Game
 {
@@ -11,7 +13,7 @@ private:
     void processEvents();
     void update();
     void render();
-    void handlePlayerInput(sf::Event::key key, bool isPressed);
+    void handlePlayerInput(sf::Keyboard::Key key, bool isPressed);
 
 private:
     sf::RenderWindow mWindow;

@@ -357,10 +357,13 @@
 	<string>
 	<vector>
 
-1450357707 source:c:\projects\sfml_learning\source\game.cpp
+1450439705 source:c:\projects\sfml_learning\source\game.cpp
 	"../include/Game.h"
+	<iostream>
 
-1450356423 c:\projects\sfml_learning\include\game.h
+1450426605 c:\projects\sfml_learning\include\game.h
+	<SFML/System.hpp>
+	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
 
 1450357707 c:\projects\sfml_learning\source\game.cpp
