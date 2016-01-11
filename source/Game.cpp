@@ -1,19 +1,35 @@
 #include "../include/Game.h"
 #include <iostream>
+
+const float Game::PlayerSpeed = 100.f;
+const sf::Time Game::TimePerFrame = sf::seconds(1.f/60.f);
+
 Game::Game()
-    : mWindow(sf::VideoMode(640, 480), "SFML Application"),mPlayer()
+    : mWindow(sf::VideoMode(640, 480), "SFML Application"), mPlayer(), mTexture()
     ,mIsMovingUp(false), mIsMovingDown(false), mIsMovingLeft(false), mIsMovingRight(false)
 {
-    mPlayer.setRadius(40.f);
+    if (!mTexture.loadFromFile("Media/Textures/Eagle.png"))
+    {
+        // Handle loading error
+    }
+    mPlayer.setTexture(mTexture);
     mPlayer.setPosition(100.f, 100.f);
-    mPlayer.setFillColor(sf::Color::Cyan);
 }
 void Game::run()
 {
+    sf::Clock clock;
+    sf::Time timeSinceLastUpdate = sf::Time::Zero;
+
     while (mWindow.isOpen())
     {
         processEvents();
-        update();
+        timeSinceLastUpdate += clock.restart();
+        while(timeSinceLastUpdate > TimePerFrame)
+        {
+            timeSinceLastUpdate -= TimePerFrame;
+            processEvents();
+            update(TimePerFrame);
+        }
         render();
     }
 }
@@ -46,7 +62,7 @@ void Game::processEvents()
         {
         case sf::Event::KeyPressed:
             handlePlayerInput(event.key.code, true);
-        break;
+            break;
         case sf::Event::KeyReleased:
             handlePlayerInput(event.key.code, false);
             break;
@@ -57,26 +73,26 @@ void Game::processEvents()
     }
 }
 
-void Game::update()
+void Game::update(sf::Time deltaTime)
 {
     sf::Vector2f movement(0.f, 0.f);
     if(mIsMovingUp)
     {
-        movement.y -= 1.f;
+        movement.y -= PlayerSpeed;
     }
     if(mIsMovingDown)
     {
-        movement.y += 1.f;
+        movement.y += PlayerSpeed;
     }
     if(mIsMovingLeft)
     {
-        movement.x -= 1.f;
+        movement.x -= PlayerSpeed;
     }
     if(mIsMovingRight)
     {
-        movement.x += 1.f;
+        movement.x += PlayerSpeed;
     }
-    mPlayer.move(movement);
+    mPlayer.move(movement * deltaTime.asSeconds());
 }
 
 void Game::render()
