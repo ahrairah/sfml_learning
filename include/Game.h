@@ -3,6 +3,11 @@
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
+namespace Textures
+{
+enum ID {Landscape, Airplane, Missile};
+}
+
 class Game
 {
 public:

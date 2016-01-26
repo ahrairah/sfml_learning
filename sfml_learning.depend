@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1450357802 source:c:\projects\sfml_learning\main.cpp
+1453821252 source:c:\projects\sfml_learning\main.cpp
 	<SFML/Graphics.hpp>
 	<iostream>
 	"include/Game.h"
@@ -357,15 +357,23 @@
 	<string>
 	<vector>
 
-1450439705 source:c:\projects\sfml_learning\source\game.cpp
+1453821312 source:c:\projects\sfml_learning\source\game.cpp
 	"../include/Game.h"
 	<iostream>
 
-1452153810 c:\projects\sfml_learning\include\game.h
+1453821314 c:\projects\sfml_learning\include\game.h
 	<SFML/System.hpp>
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
 
 1450357707 c:\projects\sfml_learning\source\game.cpp
 	"../include/Game.h"
+
+1453821004 source:c:\projects\sfml_learning\source\resourceholder.cpp
+	"../include/ResourceHolder.h"
+	<iostream>
+
+1453821594 c:\projects\sfml_learning\include\resourceholder.h
+	<memory>
+	"Game.h"
 

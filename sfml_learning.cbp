@@ -45,6 +45,7 @@
 			<Add directory="C:/SFML-2.2/lib" />
 		</Linker>
 		<Unit filename="include/Game.h" />
+		<Unit filename="include/ResourceHolder.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="source/Game.cpp" />
 		<Extensions>
