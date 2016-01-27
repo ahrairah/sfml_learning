@@ -3,11 +3,7 @@
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
-namespace Textures
-{
-enum ID {Landscape, Airplane, Missile};
-}
-
+#include "../include/ResourceHolder.h"
 class Game
 {
 public:
@@ -25,7 +21,7 @@ private:
     static const sf::Time TimePerFrame;
     sf::RenderWindow mWindow;
     sf::Sprite mPlayer;
-    sf::Texture mTexture;
+    TextureHolder textures;
     bool mIsMovingUp;
     bool mIsMovingDown;
     bool mIsMovingLeft;

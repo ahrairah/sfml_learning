@@ -1,17 +1,15 @@
 #include "../include/Game.h"
+#include "../include/ResourceHolder.h"
 #include <iostream>
 const float Game::PlayerSpeed = 100.f;
 const sf::Time Game::TimePerFrame = sf::seconds(1.f/60.f);
 
 Game::Game()
-    : mWindow(sf::VideoMode(640, 480), "SFML Application"), mPlayer(), mTexture()
+    : mWindow(sf::VideoMode(640, 480), "SFML Application"), mPlayer(), textures()
     ,mIsMovingUp(false), mIsMovingDown(false), mIsMovingLeft(false), mIsMovingRight(false)
 {
-    if (!mTexture.loadFromFile("Media/Textures/Eagle.png"))
-    {
-        // Handle loading error
-    }
-    mPlayer.setTexture(mTexture);
+    textures.load(Textures::Airplane, "Media/Textures/Eagle.png");
+    mPlayer.setTexture(textures.get(Textures::Airplane));
     mPlayer.setPosition(100.f, 100.f);
 }
 void Game::run()
