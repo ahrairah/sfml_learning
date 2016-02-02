@@ -6,14 +6,15 @@ namespace Textures
 enum ID {Landscape, Airplane, Missile};
 }
 
-class TextureHolder
+template <typename Resource, typename Identifier>
+class ResourceHolder
 {
 public:
-    void load(Textures::ID id, const std::string& filename);
-    sf::Texture& get(Textures::ID id);
-    const sf::Texture& get(Textures::ID id) const;
+    void load(Identifier, const std::string& filename);
+    Resource& get(Identifier id);
+    const Resource& get(Identifier id) const;
 private:
-    std::map<Textures::ID, std::unique_ptr<sf::Texture>> mTextureMap;
+    std::map<Identifier, std::unique_ptr<Resource>> mResourceMap;
 };
-
+#include "ResourceHolder.inl"
 #endif // RESOURCEHOLDER_H_INCLUDED

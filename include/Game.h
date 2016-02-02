@@ -21,7 +21,7 @@ private:
     static const sf::Time TimePerFrame;
     sf::RenderWindow mWindow;
     sf::Sprite mPlayer;
-    TextureHolder textures;
+    ResourceHolder<sf::Texture, Textures::ID> textures;
     bool mIsMovingUp;
     bool mIsMovingDown;
     bool mIsMovingLeft;
