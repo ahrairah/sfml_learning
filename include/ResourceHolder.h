@@ -13,6 +13,8 @@ public:
     void load(Identifier, const std::string& filename);
     Resource& get(Identifier id);
     const Resource& get(Identifier id) const;
+    template<typename Parameter>
+    void load(Identifier id, const std::string filename, const Parameter& secondParam);
 private:
     std::map<Identifier, std::unique_ptr<Resource>> mResourceMap;
 };

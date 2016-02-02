@@ -46,9 +46,9 @@
 		</Linker>
 		<Unit filename="include/Game.h" />
 		<Unit filename="include/ResourceHolder.h" />
+		<Unit filename="include/ResourceHolder.inl" />
 		<Unit filename="main.cpp" />
 		<Unit filename="source/Game.cpp" />
-		<Unit filename="source/ResourceHolder.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
