@@ -3,7 +3,8 @@
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
-#include "../include/ResourceHolder.h"
+#include "ResourceHolder.h"
+#include "Aircraft.h"
 class Game
 {
 public:

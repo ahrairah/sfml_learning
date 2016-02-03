@@ -1,6 +1,7 @@
 #ifndef RESOURCEHOLDER_H_INCLUDED
 #define RESOURCEHOLDER_H_INCLUDED
 #include <memory>
+#include <assert.h>
 namespace Textures
 {
 enum ID {Landscape, Airplane, Missile};
