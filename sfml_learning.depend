@@ -400,3 +400,12 @@
 1454489337 source:c:\projects\sfml_learning\source\aircraft.cpp
 	"../include/Aircraft.h"
 
+1455528667 source:c:\projects\sfml_learning\source\scenenode.cpp
+	"../include/SceneNode.h"
+
+1455528699 c:\projects\sfml_learning\include\scenenode.h
+	<memory>
+	<vector>
+	<assert.h>
+	<algorithm>
+
