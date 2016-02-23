@@ -4,7 +4,7 @@
 #include <assert.h>
 namespace Textures
 {
-enum ID {Landscape, Airplane, Missile};
+enum ID {Eagle, Raptor};
 }
 
 template <typename Resource, typename Identifier>
@@ -19,5 +19,6 @@ public:
 private:
     std::map<Identifier, std::unique_ptr<Resource>> mResourceMap;
 };
+typedef ResourceHolder<sf::Texture, Textures::ID> TextureHolder;
 #include "ResourceHolder.inl"
 #endif // RESOURCEHOLDER_H_INCLUDED

@@ -4,7 +4,8 @@
 #include <vector>
 #include <assert.h>
 #include <algorithm>
-class SceneNode
+#include <SFML/Graphics.hpp>
+class SceneNode : public sf::Transformable, public sf::Drawable, private sf::NonCopyable
 {
 
 public:
@@ -14,6 +15,10 @@ public:
     SceneNode();
     void attachChild(Ptr child);
     Ptr detachChild(const SceneNode& node);
+
+private:
+    virtual void  draw(sf::RenderTarget& target, sf::RenderStates states) const;
+    virtual void drawCurrrent(sf::RenderTarget& target, sf::RenderStates states) const;
 
 private:
     std::vector<Ptr> mChildren;

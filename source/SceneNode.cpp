@@ -15,3 +15,18 @@ SceneNode::Ptr SceneNode::detachChild(const SceneNode& node)
     mChildren.erase(found);
     return result;
 }
+
+void SceneNode::draw(sf::RenderTarget& target, sf::RenderStates states) const
+{
+    states.transform *= getTransform();
+    drawCurrrent(target, states);
+    for (const Ptr& child : mChildren)
+    {
+        child->draw(target, states);
+    }
+}
+
+void SceneNode::drawCurrrent(sf::RenderTarget& target, sf::RenderStates states) const
+{
+
+}

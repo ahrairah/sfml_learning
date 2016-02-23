@@ -363,7 +363,7 @@
 	"../include/ResourceHolder.h"
 	<iostream>
 
-1454488855 c:\projects\sfml_learning\include\game.h
+1456231017 c:\projects\sfml_learning\include\game.h
 	<SFML/System.hpp>
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
@@ -380,7 +380,7 @@
 	"../include/ResourceHolder.h"
 	<iostream>
 
-1454490629 c:\projects\sfml_learning\include\resourceholder.h
+1456231862 c:\projects\sfml_learning\include\resourceholder.h
 	<memory>
 	<assert.h>
 	"ResourceHolder.inl"
@@ -393,19 +393,20 @@
 1454488293 c:\projects\sfml_learning\include\entity.h
 	<SFML/Graphics.hpp>
 
-1454489752 c:\projects\sfml_learning\include\aircraft.h
+1456222446 c:\projects\sfml_learning\include\aircraft.h
 	<SFML/Graphics.hpp>
 	"Entity.h"
 
-1454489337 source:c:\projects\sfml_learning\source\aircraft.cpp
+1456230843 source:c:\projects\sfml_learning\source\aircraft.cpp
 	"../include/Aircraft.h"
 
-1455528667 source:c:\projects\sfml_learning\source\scenenode.cpp
+1456221702 source:c:\projects\sfml_learning\source\scenenode.cpp
 	"../include/SceneNode.h"
 
-1455528699 c:\projects\sfml_learning\include\scenenode.h
+1456220295 c:\projects\sfml_learning\include\scenenode.h
 	<memory>
 	<vector>
 	<assert.h>
 	<algorithm>
+	<SFML/Graphics.hpp>
 

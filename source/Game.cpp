@@ -10,8 +10,8 @@ Game::Game()
 {
     try
     {
-        textures.load(Textures::Airplane, "Media/Textures/Eagle.png");
-        mPlayer.setTexture(textures.get(Textures::Airplane));
+        textures.load(Textures::Eagle, "Media/Textures/Eagle.png");
+        mPlayer.setTexture(textures.get(Textures::Eagle));
         mPlayer.setPosition(100.f, 100.f);
     }
     catch(std::runtime_error &e)
