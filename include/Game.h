@@ -5,6 +5,9 @@
 #include <SFML/Graphics.hpp>
 #include "ResourceHolder.h"
 #include "Aircraft.h"
+#include "ResourceHolder.h"
+#include "Entity.h"
+#include "SceneNode.h"
 class Game
 {
 public:

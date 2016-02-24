@@ -2,7 +2,7 @@
 #define AIRCRAFT_H_INCLUDED
 #include <SFML/Graphics.hpp>
 #include "Entity.h"
-
+#include "ResourceHolder.h"
 class Aircraft : public Entity
 {
 public:

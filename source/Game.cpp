@@ -1,5 +1,4 @@
 #include "../include/Game.h"
-#include "../include/ResourceHolder.h"
 #include <iostream>
 const float Game::PlayerSpeed = 200.f;
 const sf::Time Game::TimePerFrame = sf::seconds(1.f/60.f);

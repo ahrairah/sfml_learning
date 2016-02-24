@@ -358,17 +358,19 @@
 	<string>
 	<vector>
 
-1454490953 source:c:\projects\sfml_learning\source\game.cpp
+1456300718 source:c:\projects\sfml_learning\source\game.cpp
 	"../include/Game.h"
-	"../include/ResourceHolder.h"
 	<iostream>
 
-1456231017 c:\projects\sfml_learning\include\game.h
+1456300599 c:\projects\sfml_learning\include\game.h
 	<SFML/System.hpp>
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
 	"ResourceHolder.h"
 	"Aircraft.h"
+	"ResourceHolder.h"
+	"Entity.h"
+	"SceneNode.h"
 
 1450357707 c:\projects\sfml_learning\source\game.cpp
 	"../include/Game.h"
@@ -393,11 +395,12 @@
 1454488293 c:\projects\sfml_learning\include\entity.h
 	<SFML/Graphics.hpp>
 
-1456222446 c:\projects\sfml_learning\include\aircraft.h
+1456301019 c:\projects\sfml_learning\include\aircraft.h
 	<SFML/Graphics.hpp>
 	"Entity.h"
+	"ResourceHolder.h"
 
-1456230843 source:c:\projects\sfml_learning\source\aircraft.cpp
+1456299839 source:c:\projects\sfml_learning\source\aircraft.cpp
 	"../include/Aircraft.h"
 
 1456221702 source:c:\projects\sfml_learning\source\scenenode.cpp
