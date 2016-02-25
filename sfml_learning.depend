@@ -389,11 +389,11 @@
 
 1454490726 c:\projects\sfml_learning\include\resourceholder.inl
 
-1454488194 source:c:\projects\sfml_learning\source\entity.cpp
+1456402553 source:c:\projects\sfml_learning\source\entity.cpp
 	"../include/Entity.h"
 
-1454488293 c:\projects\sfml_learning\include\entity.h
-	<SFML/Graphics.hpp>
+1456402626 c:\projects\sfml_learning\include\entity.h
+	"SceneNode.h"
 
 1456301019 c:\projects\sfml_learning\include\aircraft.h
 	<SFML/Graphics.hpp>
@@ -403,13 +403,18 @@
 1456301060 source:c:\projects\sfml_learning\source\aircraft.cpp
 	"../include/Aircraft.h"
 
-1456221702 source:c:\projects\sfml_learning\source\scenenode.cpp
+1456402516 source:c:\projects\sfml_learning\source\scenenode.cpp
 	"../include/SceneNode.h"
 
-1456302021 c:\projects\sfml_learning\include\scenenode.h
+1456402491 c:\projects\sfml_learning\include\scenenode.h
 	<memory>
 	<vector>
 	<assert.h>
 	<algorithm>
-	<SFML/Graphics.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
+	<memory>
 

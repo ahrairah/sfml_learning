@@ -4,7 +4,12 @@
 #include <vector>
 #include <assert.h>
 #include <algorithm>
-#include <SFML/Graphics.hpp>
+#include <SFML/System/NonCopyable.hpp>
+#include <SFML/System/Time.hpp>
+#include <SFML/Graphics/Transformable.hpp>
+#include <SFML/Graphics/Drawable.hpp>
+#include <vector>
+#include <memory>
 class SceneNode : public sf::Transformable, public sf::Drawable, private sf::NonCopyable
 {
     enum Layer
@@ -22,6 +27,8 @@ public:
     void attachChild(Ptr child);
     Ptr detachChild(const SceneNode& node);
     void update(sf::Time dt);
+    sf::Transform getWorldTransform() const;
+    sf::Vector2f getWorldPosition() const;
 
 private:
     virtual void  draw(sf::RenderTarget& target, sf::RenderStates states) const;
