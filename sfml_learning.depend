@@ -403,10 +403,10 @@
 1456301060 source:c:\projects\sfml_learning\source\aircraft.cpp
 	"../include/Aircraft.h"
 
-1456402516 source:c:\projects\sfml_learning\source\scenenode.cpp
+1456402754 source:c:\projects\sfml_learning\source\scenenode.cpp
 	"../include/SceneNode.h"
 
-1456402491 c:\projects\sfml_learning\include\scenenode.h
+1456490150 c:\projects\sfml_learning\include\scenenode.h
 	<memory>
 	<vector>
 	<assert.h>
@@ -415,6 +415,7 @@
 	<SFML/System/Time.hpp>
 	<SFML/Graphics/Transformable.hpp>
 	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Sprite.hpp>
 	<vector>
 	<memory>
 
