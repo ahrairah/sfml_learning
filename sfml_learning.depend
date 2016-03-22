@@ -419,3 +419,9 @@
 	<vector>
 	<memory>
 
+1456490405 source:c:\projects\sfml_learning\source\spritenode.cpp
+	"../include/SpriteNode.h"
+
+1456490100 c:\projects\sfml_learning\include\spritenode.h
+	"SceneNode.h"
+

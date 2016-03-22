@@ -54,11 +54,13 @@
 		<Unit filename="include/ResourceHolder.h" />
 		<Unit filename="include/ResourceHolder.inl" />
 		<Unit filename="include/SceneNode.h" />
+		<Unit filename="include/SpriteNode.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="source/Aircraft.cpp" />
 		<Unit filename="source/Entity.cpp" />
 		<Unit filename="source/Game.cpp" />
 		<Unit filename="source/SceneNode.cpp" />
+		<Unit filename="source/SpriteNode.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
