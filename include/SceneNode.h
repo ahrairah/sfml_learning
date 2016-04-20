@@ -9,6 +9,8 @@
 #include <SFML/Graphics/Transformable.hpp>
 #include <SFML/Graphics/Drawable.hpp>
 #include <SFML/Graphics/Sprite.hpp>
+#include <SFML/Graphics/RenderTarget.hpp>
+#include <SFML/Graphics/RenderStates.hpp>
 #include <vector>
 #include <memory>
 class SceneNode : public sf::Transformable, public sf::Drawable, private sf::NonCopyable

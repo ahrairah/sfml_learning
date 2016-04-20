@@ -2,6 +2,7 @@
 #define RESOURCEHOLDER_H_INCLUDED
 #include <memory>
 #include <assert.h>
+#include <map>
 namespace Textures
 {
 enum ID {Eagle, Raptor};

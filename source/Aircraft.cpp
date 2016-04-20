@@ -1,4 +1,6 @@
 #include "../include/Aircraft.h"
+#include "../include/ResourceHolder.h"
+
 Textures::ID toTextureID(Aircraft::Type type)
 {
     switch(type)
@@ -10,6 +12,7 @@ Textures::ID toTextureID(Aircraft::Type type)
         return Textures::Raptor;
         break;
     }
+    return Textures::Eagle;
 }
 Aircraft::Aircraft(Type type, const TextureHolder& textures): mType(type), mSprite(textures.get(toTextureID(type)))
 {
